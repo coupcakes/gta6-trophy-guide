@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI, all 55 PS5 trophies</title>
+<meta name="description" content="An offline guide and tracker for all 55 PlayStation 5 trophies of Grand Theft Auto VI: official list, cited guides, roadmap to the platinum, missable warnings, saved progress.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <p class="eyebrow">Unofficial fan guide · Not affiliated with or endorsed by Rockstar Games</p>
+  <h1>Leonida Trophy Guide</h1>
+  <p class="subtitle">Grand Theft Auto VI — all 55 PlayStation 5 trophies, with a cited guide to each one and a tracker that saves your progress in the browser. The game launched 19 November 2026 on PS5 and Xbox Series X|S, set in Leonida and Vice City, starring Jason Duval and Lucia Caminos. No PC version has been announced.</p>
+</header>
+
+<main>
+  <section class="progress" aria-label="Progress">
+    <div class="progress-head">
+      <p class="progress-count"><strong id="earned-count">0</strong> of 55 earned</p>
+      <p class="progress-pct" id="progress-pct">0%</p>
+    </div>
+    <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="55" aria-valuenow="0" id="progress-bar-wrap">
+      <div class="bar-fill" id="progress-bar" style="width: 0%"></div>
+    </div>
+    <ul class="grade-counts" id="grade-counts"></ul>
+    <p class="progress-note" id="progress-note">Tick a trophy off and it stays ticked — your progress lives in this browser only.</p>
+  </section>
+
+  <section class="honesty" aria-label="Honesty note">
+    <h2>Read this first</h2>
+    <p>Five trophies had <strong>no confirmed unlock method at launch</strong> — their guides say so instead of guessing. Two trophies can be missed: <strong>Positive Mental Attitude</strong> (Lucia's balcony meditation, Chapter 1 only) and, at risk, <strong>Strangers &amp; Freaks</strong> (a Chapter 3 strand race). Everything else can be earned after the story.</p>
+  </section>
+
+  <section class="controls" aria-label="Filters and tools">
+    <div class="control-row">
+      <label class="search-label">Search <input id="search" type="search" placeholder="Trophy name or description…" autocomplete="off"></label>
+      <label class="grade-label">Grade
+        <select id="grade-filter">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label class="spoiler-label"><input id="spoiler-toggle" type="checkbox"> Spoiler-safe: hide story trophies until earned</label>
+    </div>
+    <div class="kind-filters" id="kind-filters" role="group" aria-label="Filter by kind"></div>
+    <div class="control-row tools">
+      <button id="export-btn" type="button">Export progress</button>
+      <label class="import-label">Import progress <input id="import-file" type="file" accept="application/json,.json"></label>
+      <button id="reset-btn" type="button">Reset progress</button>
+      <button id="earned-only-btn" type="button" aria-pressed="false">Show earned only</button>
+    </div>
+  </section>
+
+  <section class="list" aria-label="Trophy checklist">
+    <h2>Trophy checklist <span class="list-count" id="list-count"></span></h2>
+    <p class="section-intro">Every trophy shows its official name, description and grade — open one for its guide, sources, difficulty and time.</p>
+    <div id="trophy-list"></div>
+    <p class="empty" id="empty-note" hidden>No trophies match these filters.</p>
+  </section>
+
+  <section class="roadmap" id="roadmap" aria-label="Roadmap to the platinum">
+    <h2>Roadmap to the platinum</h2>
+    <p class="section-intro">Six stages, in order. The stages are built from the official descriptions: which story chapters and missions, which collectibles and counts. Click a trophy chip to open its guide.</p>
+    <ol class="stages" id="stages"></ol>
+  </section>
+
+  <section class="sources" aria-label="Sources">
+    <h2>Sources</h2>
+    <p>The list itself comes from the official 55 trophies as listed by Exophase and PSNProfiles and reported by Push Square (18 November 2026). Each trophy's guide cites its own sources beside it — mostly the Output Lag trophy list, with GTA Bay for activities and regions, GTA Vice City Hub for the 100% checklist, and U7BUY for the 500-action count.</p>
+    <ul>
+      <li><a href="https://www.pushsquare.com/news/2026/11/gta-6-ps5-trophies-revealed-100percent-completion-needed-for-the-platinum">Push Square: GTA 6 PS5 Trophies Revealed (18 Nov 2026, citing Exophase)</a></li>
+      <li><a href="https://outputlag.com/guides/gta-6-trophy-list/">Output Lag: GTA 6 Trophy List, all 55</a></li>
+      <li><a href="https://www.gtavicecityhub.com/achievements">GTA Vice City Hub: GTA 6 Achievements</a></li>
+      <li><a href="https://www.gtabay.com/en/database/gta-6-activities-side-content-what-we-know">GTA Bay: GTA 6 Activities — what Rockstar has shown</a></li>
+      <li><a href="https://www.u7buy.com/blog/gta-6-trophies/">U7BUY: GTA 6 Trophies guide</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p>Unofficial fan-made guide. Grand Theft Auto, GTA and Rockstar Games are trademarks of their owners; this guide is not affiliated with or endorsed by Rockstar Games. It runs entirely offline from its own files and sends nothing anywhere. Trophy names, descriptions and grades as published by PlayStation at launch.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
